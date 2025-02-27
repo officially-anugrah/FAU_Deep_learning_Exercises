@@ -75,3 +75,39 @@ This folder contains the implementation of **Exercise 3** from my deep learning 
   - Implementation of `L1Regularizer` and `L2Regularizer` in `Constraints.py` for weight norm constraints.
   - Refactored optimizers to support regularization via `calculate_gradient(weights)`.
   - Modification of `NeuralNetwork` to add regularization loss to the data loss.
+
+## Exercise 4: PyTorch for Classification
+### Overview
+This folder contains the implementation of **Exercise 4** from my deep learning coursework. The exercise focuses on implementing a **classification model using PyTorch**, specifically a version of the **ResNet architecture** to detect defects in solar cells.<br />
+*Note: I have also kept the model which i have submitted for the challange server as we cannot modify the model architecture. if you want to see how far we can push and get the best results, check my other repo that i will be working on next. Most probably named Advanced solar cell crack detector.*
+
+### Objectives
+- Implement a **convolutional neural network (CNN)** based on ResNet.
+- Utilize **PyTorch** to build and train the model.
+- Handle **image-based classification** for detecting:
+  - **Cracks** in solar cells.
+  - **Inactive regions** in solar cells.
+- Optimize hyperparameters to achieve the best **F1 score**.
+- Compete in an **open classification challenge**, with results displayed on an online leaderboard.
+
+### Dataset
+Extract the images.zip file.
+The dataset consists of electroluminescence images of solar cells, labeled with:
+- **Crack presence** (binary classification: 0 or 1).
+- **Inactive region presence** (binary classification: 0 or 1).
+
+#### Data Format
+- Images are in **PNG format**.
+- Labels are provided in **data.csv**, which contains:
+  - File path to each image.
+  - Corresponding crack and inactive region labels.
+
+### Implementation Details
+- **Language:** Python
+- **Libraries Used:** PyTorch, NumPy, Pandas, OpenCV
+- **Key Components:**
+  - **ResNet-based CNN** for feature extraction and classification.
+  - **Data preprocessing pipeline** for image normalization and augmentation.
+  - **Loss function and optimizer** setup for efficient training.
+  - **Model evaluation** using accuracy, precision, recall, and F1 score.
+  - **Hyperparameter tuning** for optimal performance.

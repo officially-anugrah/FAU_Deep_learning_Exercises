@@ -30,3 +30,25 @@ This folder contains the implementation of **Exercise 1** from my deep learning 
   - Loss computation
   - Backpropagation
   - Parameter updates using **Stochastic Gradient Descent (SGD)**
+
+## Exercise 2
+### Overview
+This repository contains the implementation of **Exercise 2** from my deep learning coursework. The exercise focuses on extending the neural network framework to include building blocks for **Convolutional Neural Networks (CNNs)**, initialization schemes, advanced optimizers, and key CNN layers.
+
+### Objectives
+- Implement various **weight initialization schemes** (Constant, UniformRandom, Xavier, He).
+- Develop advanced **optimization algorithms** (SGD with Momentum, Adam Optimizer).
+- Implement essential **CNN layers**:
+  - Convolutional Layer
+  - Max-Pooling Layer
+  - Flatten Layer
+- Ensure compatibility between fully connected and convolutional layers.
+
+### Implementation Details
+- **Language:** Python
+- **Libraries Used:** NumPy, SciPy (for convolution operations)
+- **Key Components:**
+  - Custom initialization strategies for network weights.
+  - Forward and backward propagation for CNN layers.
+  - Implementation of momentum-based and adaptive optimization algorithms.
+  - Integration with existing neural network framework.
